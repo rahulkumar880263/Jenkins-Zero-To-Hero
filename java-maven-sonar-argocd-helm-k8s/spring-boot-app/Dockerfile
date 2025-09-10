@@ -1,6 +1,6 @@
 # You can change this base image to anything else
 # But make sure to use the correct version of Java
-FROM eclipse-temurin:21-jdk
+FROM openjdk:17-jdk-slim
 #adoptopenjdk/openjdk17:alpine-jre
 
 # Simply the artifact path
