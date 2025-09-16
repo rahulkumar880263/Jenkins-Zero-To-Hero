@@ -56,7 +56,7 @@ pipeline {
             GIT_USER_NAME = "rahulkumar880263"
         }
         steps {
-            withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
+            withCredentials([string(credentialsId: 'Github', variable: 'GITHUB_TOKEN')]) {
                 sh '''
                     git clone https://github.com/rahulkumar880263/Jenkins-Zero-To-Hero
                     cd Jenkins-Zero-To-Hero
