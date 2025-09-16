@@ -61,6 +61,9 @@ pipeline {
                     if [ -d "Jenkins-Zero-To-Hero" ] 
                     then
                     echo "Directory /path/to/dir exists."
+                    echo "Deleting the old directory & pulling the directory with latest changes from Github repo"
+                    rm -rf Jenkins-Zero-To-Hero
+                    git clone https://github.com/rahulkumar880263/Jenkins-Zero-To-Hero                    
                     else
                     git clone https://github.com/rahulkumar880263/Jenkins-Zero-To-Hero
                     fi
