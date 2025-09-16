@@ -12,6 +12,11 @@ pipeline {
         git branch: 'main', url: 'https://github.com/rahulkumar880263/Jenkins-Zero-To-Hero.git'
       }
     }
+    stage('Run Docker') {
+      steps {
+        sh 'docker version'
+      }
+    }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
