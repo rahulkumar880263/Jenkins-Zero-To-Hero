@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: rahulkumar88026/devops:8
+        image: rahulkumarv9v9026/devops:v9
         ports:
-        - containerPort: 8080
+        - containerPort: v90v90
